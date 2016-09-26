@@ -1,0 +1,114 @@
+$primary_color: #fff;
+$complementry_color: #cbedef;
+$contrast_color: #c3ff1f;
+$link_color: #c3ff1f;
+$link_color_hover: #ff6205;
+
+html {
+	background: white;
+	height:100%;
+
+
+}
+body {
+	/*height:100%;*/
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	/*background: linear-gradient(#70b1b5, #cadddd);*/
+	background: url('../img/pioneer11.jpg')center;
+	background-size: cover;
+	background-attachment: fixed;
+	line-height: 1.7em;
+	a {
+		color: $link_color;
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			color: $link_color_hover;
+		}
+
+	}
+	h1,
+	h2,
+	h3 {
+		color: $contrast_color;
+	}
+	
+}
+#flex-container {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	
+	/*min-height: 100vh;*/
+}
+
+#summary,
+#details,
+#about,
+#work {
+	/*aligns child's container with respect to parent - horizontally*/
+	align-self: center;
+	text-align: center;
+	@media (min-width: 768px) {
+		text-align: left;
+	}
+}
+#summary {
+	#profile-pic {
+		position: relative;
+		border-radius: 50%;
+		width: 200px;
+		border: 3px solid white;
+	}
+	padding: 150px 40px 20px;
+	text-align: center;
+	ul li {
+		font-size: 1.3em;
+	}
+	p {
+		position: relative;
+	}
+}
+#details {
+	padding: 20px 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+#hello {
+	position: relative;
+}
+
+
+#about,
+#work {
+	padding: 25px 0;
+}
+.bar {
+	height: 3px;
+	background: $complementry_color;
+	width: 30%;
+	margin: 0 auto 20px;
+
+}
+@media(min-width: 768px) {
+	body { height: 100%; }
+	#flex-container {
+		/*by default children take up full height of parent*/
+		justify-content: space-around;
+		flex-direction: row;		
+		height:100%;
+	}
+	#summary {
+		padding: 20px 0;
+	}
+	#summary,
+	#details {
+		align-self: center;
+		width: 45%;
+
+	}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "jitso97.github",
+  "version": "1.0.0",
+  "description": "homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jitso97/jitso97.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jitso97/jitso97.github.io/issues"
+  },
+  "homepage": "https://github.com/jitso97/jitso97.github.io#readme",
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
