@@ -14,11 +14,12 @@ body {
 	/*height:100%;*/
 	font-family: 'Raleway', sans-serif;
 	color: white;
-	/*background: linear-gradient(#70b1b5, #cadddd);*/
-	background: url('../img/pioneer11.jpg')center;
-	background-size: cover;
-	background-attachment: fixed;
-	line-height: 1.7em;
+	background: #383838;
+	/*background: linear-gradient(#70b1b5, #383838);*/
+	/*background: url('../img/pioneer11.jpg')center;*/
+	/*background-size: cover;*/
+	/*background-attachment: fixed;*/
+	line-height: 1.8em;
 	a {
 		color: $link_color;
 		&:hover,
@@ -34,6 +35,11 @@ body {
 		color: $contrast_color;
 	}
 	
+}
+p {
+	font-size: 16px;
+	@media(min-width:768px){ font-size: 20px; }
+
 }
 #flex-container {
 	display: flex;
@@ -61,7 +67,8 @@ body {
 		width: 200px;
 		border: 3px solid white;
 	}
-	padding: 150px 40px 20px;
+	
+	padding: 50px 40px 20px;
 	text-align: center;
 	ul li {
 		font-size: 1.3em;

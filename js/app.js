@@ -38,7 +38,7 @@ $(document).ready(function(){
 			opacity: 1,
 			bottom: 0
 		},
-		1500,
+		800,
 		"easeOutCirc"
 		)
 	}
