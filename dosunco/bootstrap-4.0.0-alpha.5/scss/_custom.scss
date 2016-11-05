@@ -1,0 +1,11 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+$font-family-sans-serif: 'Josefin Sans', sans-serif; 
+$font-size-root: 18px;
+// $font-family-base: $font-family-sans-serif;
+$brand-primary: #52d4ff;
+$body-bg: #3e3e3e;
+$grid-gutter-width-base:     60px;
+$body-color: white;

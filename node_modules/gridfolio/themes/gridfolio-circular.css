@@ -1,0 +1,53 @@
+.gridfolio[data-theme="circular"] .gridfolio--block-content {
+  border-radius: 100%;
+  text-align: center;
+  padding: 10%;
+
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+
+.gridfolio[data-theme="circular"] .gridfolio--block-content:hover {
+  transform: scale3d(1.05,1.05,1);
+  -webkit-transform: scale3d(1.05,1.05,1);
+  -moz-transform: scale3d(1.05,1.05,1);
+}
+
+.gridfolio[data-theme="circular"] .gridfolio--block-title-wrapper {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.gridfolio[data-theme="circular"] .gridfolio--block-title {
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.gridfolio[data-theme="circular"] .gridfolio--block-description-wrapper {
+  font-size: 9px;
+}
+
+.gridfolio[data-theme="circular"] .gridfolio--block-description {
+  font-weight: 100;
+  letter-spacing: 0.03em;
+  line-height: 1.8;
+}
+
+.gridfolio[data-theme="circular"] .gridfolio--block-tags-wrapper {
+  font-size: 7px;
+  letter-spacing: 0.2em;
+  padding-bottom: 20px;
+}
+
+.gridfolio[data-theme="circular"] .gridfolio--block-tags span {
+  font-weight: 600;
+  background-color: transparent;
+}
+
+@media (min-width: 500px) {
+}
+
+@media (min-width: 900px) {
+}

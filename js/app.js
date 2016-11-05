@@ -1,5 +1,5 @@
 // var $ = require('jquery');
-
+require('gridfolio'); //node-modules/gridfolio/dist/
 
 $(document).ready(function(){
 
@@ -17,9 +17,9 @@ $(document).ready(function(){
 			opacity: 1,
 			top: 0
 		}, 
-		700,
+		900,
 		"easeOutBounce",
-		function(){ animate2(); }
+		function(){ animate3(); }
 		);
 	}
 	function animate2() {
@@ -42,4 +42,56 @@ $(document).ready(function(){
 		"easeOutCirc"
 		)
 	}
+
+
+	var gridfolio = new Gridfolio({
+		container: '#gridfolio-container',
+		options: {
+			animateIntoView: true,
+			breakpoints: [
+				{minWidth: 0, gridWidth: 1 },
+				{minWidth: 480, gridWidth: 2 },
+				{minWidth: 768, gridWidth: 3 },
+				{minWidth: 1024, gridWidth: 4 }
+			],
+			scaleFonts: true,
+			theme: 'warhol'
+		},
+		blocks: [
+			{
+				title: 'Project Title',
+				description: 'First one was with doing some fishing equipment site.',
+				url: 'http://skullcandy.com',
+				tags: ['html5', 'css3', 'javascript'],
+				classname: ''
+			},
+			{
+				title: 'Project Title',
+				description: 'First one was with doing some nets.',
+				url: 'http://skullcandy.com',
+				tags: ['html5', 'css3', 'javascript'],
+				classname: ''
+			},
+			{
+				title: 'Project Title',
+				description: 'First one was with doing some nets.',
+				url: 'dosunco/index.html',
+				tags: ['html5', 'css3', 'javascript'],
+				classname: ''
+			},
+			{
+				title: 'Project Title',
+				description: 'First one was with doing some nets.',
+				url: 'http://skullcandy.com',
+				tags: ['html5', 'css3', 'javascript'],
+				classname: ''
+			},
+		]
+
+	});
+
+
+
+
+
 });

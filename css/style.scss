@@ -1,24 +1,36 @@
-$primary_color: #fff;
+
+@import "../node_modules/gridfolio/dist/gridfolio.css";
+@import "../node_modules/gridfolio/themes/gridfolio-warhol.css";
+@import "../node_modules/gridfolio/themes/gridfolio-textures.css";
+
+
+$primary_color: #000;
 $complementry_color: #cbedef;
-$contrast_color: #c3ff1f;
-$link_color: #c3ff1f;
+$contrast_color: #39d8ff;
+$link_color: #39d8ff;
 $link_color_hover: #ff6205;
 
 html {
 	background: white;
-	height:100%;
+	
 
 
 }
 body {
+	padding: 5%;
 	/*height:100%;*/
 	font-family: 'Raleway', sans-serif;
-	color: white;
-	background: #383838;
+	color: $primary_color;
+	background: #f4f4f4;
+	
+
 	/*background: linear-gradient(#70b1b5, #383838);*/
-	/*background: url('../img/pioneer11.jpg')center;*/
-	/*background-size: cover;*/
-	/*background-attachment: fixed;*/
+	/*background: url('../img/AdobeStock_27027701_WM.jpg')center;*/
+	/*background: url('../img/AdobeStock_40355844_WM.jpeg')center;*/
+	/*background: url('../img/AdobeStock_67400383_WM.jpeg')center;*/
+	background: url('../img/AdobeStock_23175587.jpeg')center;
+	background-size: cover;
+	background-attachment: fixed;
 	line-height: 1.8em;
 	a {
 		color: $link_color;
@@ -32,13 +44,13 @@ body {
 	h1,
 	h2,
 	h3 {
-		color: $contrast_color;
+		/*color: $contrast_color;*/
 	}
 	
 }
 p {
 	font-size: 16px;
-	@media(min-width:768px){ font-size: 20px; }
+	/*@media(min-width:768px){ font-size: 20px; }*/
 
 }
 #flex-container {
@@ -63,18 +75,18 @@ p {
 #summary {
 	#profile-pic {
 		position: relative;
-		border-radius: 50%;
-		width: 200px;
-		border: 3px solid white;
+		box-shadow: 4px 4px 10px black;
+		/*border-radius: 50%;*/
+		width: 75%;
+		border: 14px solid white;
 	}
 	
 	padding: 50px 40px 20px;
 	text-align: center;
-	ul li {
-		font-size: 1.3em;
-	}
+	
 	p {
 		position: relative;
+		padding-top: 30px;
 	}
 }
 #details {
@@ -82,6 +94,10 @@ p {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+
+	ul li {
+		font-size: 1.5em;
+	}
 
 }
 
@@ -99,10 +115,12 @@ p {
 	background: $complementry_color;
 	width: 30%;
 	margin: 0 auto 20px;
-
 }
+
 @media(min-width: 768px) {
+
 	body { height: 100%; }
+
 	#flex-container {
 		/*by default children take up full height of parent*/
 		justify-content: space-around;
@@ -111,11 +129,32 @@ p {
 	}
 	#summary {
 		padding: 20px 0;
+		width: 30%;
+		text-align: left;
+		#profile-pic {
+			width: 100%;
+		}
+	}
+	#details {
+		width: 65%;
 	}
 	#summary,
 	#details {
 		align-self: center;
-		width: 45%;
-
+		/*width: 45%;*/
 	}
 }
+@media(min-width: 1200px){
+	#summary {
+		#profile-pic {
+			width: 70%;
+		}
+	}
+	
+
+}
+h2.gridfolio--block-title {
+	margin: 0;
+	font-size: 1em;
+}
+

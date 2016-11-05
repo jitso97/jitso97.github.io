@@ -17,6 +17,13 @@
   },
   "homepage": "https://github.com/jitso97/jitso97.github.io#readme",
   "dependencies": {
+    "gridfolio": "^2.0.2",
     "jquery": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "webpack": "^1.13.2"
   }
 }

@@ -1,2 +1,120 @@
-html{background:white;height:100%}body{font-family:'Raleway', sans-serif;color:white;background:#383838;line-height:1.8em}body a{color:#c3ff1f}body a:hover,body a:focus{text-decoration:none;color:#ff6205}body h1,body h2,body h3{color:#c3ff1f}p{font-size:16px}@media (min-width: 768px){p{font-size:20px}}#flex-container{display:flex;flex-direction:column;padding:0}#summary,#details,#about,#work{align-self:center;text-align:center}@media (min-width: 768px){#summary,#details,#about,#work{text-align:left}}#summary{padding:50px 40px 20px;text-align:center}#summary #profile-pic{position:relative;border-radius:50%;width:200px;border:3px solid white}#summary ul li{font-size:1.3em}#summary p{position:relative}#details{padding:20px 40px;display:flex;flex-direction:column;justify-content:space-around}#hello{position:relative}#about,#work{padding:25px 0}.bar{height:3px;background:#cbedef;width:30%;margin:0 auto 20px}@media (min-width: 768px){body{height:100%}#flex-container{justify-content:space-around;flex-direction:row;height:100%}#summary{padding:20px 0}#summary,#details{align-self:center;width:45%}}
+@import url(../node_modules/gridfolio/dist/gridfolio.css);
+@import url(../node_modules/gridfolio/themes/gridfolio-warhol.css);
+@import url(../node_modules/gridfolio/themes/gridfolio-textures.css);
+html {
+  background: white; }
+
+body {
+  padding: 5%;
+  /*height:100%;*/
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+  background: #f4f4f4;
+  /*background: linear-gradient(#70b1b5, #383838);*/
+  /*background: url('../img/AdobeStock_27027701_WM.jpg')center;*/
+  /*background: url('../img/AdobeStock_40355844_WM.jpeg')center;*/
+  /*background: url('../img/AdobeStock_67400383_WM.jpeg')center;*/
+  background: url("../img/AdobeStock_23175587.jpeg") center;
+  background-size: cover;
+  background-attachment: fixed;
+  line-height: 1.8em; }
+  body a {
+    color: #39d8ff; }
+    body a:hover, body a:focus {
+      text-decoration: none;
+      color: #ff6205; }
+  body h1,
+  body h2,
+  body h3 {
+    /*color: $contrast_color;*/ }
+
+p {
+  font-size: 16px;
+  /*@media(min-width:768px){ font-size: 20px; }*/ }
+
+#flex-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  /*min-height: 100vh;*/ }
+
+#summary,
+#details,
+#about,
+#work {
+  /*aligns child's container with respect to parent - horizontally*/
+  align-self: center;
+  text-align: center; }
+  @media (min-width: 768px) {
+    #summary,
+    #details,
+    #about,
+    #work {
+      text-align: left; } }
+
+#summary {
+  padding: 50px 40px 20px;
+  text-align: center; }
+  #summary #profile-pic {
+    position: relative;
+    box-shadow: 4px 4px 10px black;
+    /*border-radius: 50%;*/
+    width: 75%;
+    border: 14px solid white; }
+  #summary p {
+    position: relative;
+    padding-top: 30px; }
+
+#details {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  #details ul li {
+    font-size: 1.5em; }
+
+#hello {
+  position: relative; }
+
+#about,
+#work {
+  padding: 25px 0; }
+
+.bar {
+  height: 3px;
+  background: #cbedef;
+  width: 30%;
+  margin: 0 auto 20px; }
+
+@media (min-width: 768px) {
+  body {
+    height: 100%; }
+
+  #flex-container {
+    /*by default children take up full height of parent*/
+    justify-content: space-around;
+    flex-direction: row;
+    height: 100%; }
+
+  #summary {
+    padding: 20px 0;
+    width: 30%;
+    text-align: left; }
+    #summary #profile-pic {
+      width: 100%; }
+
+  #details {
+    width: 65%; }
+
+  #summary,
+  #details {
+    align-self: center;
+    /*width: 45%;*/ } }
+@media (min-width: 1200px) {
+  #summary #profile-pic {
+    width: 70%; } }
+h2.gridfolio--block-title {
+  margin: 0;
+  font-size: 1em; }
+
 /*# sourceMappingURL=style.css.map */
